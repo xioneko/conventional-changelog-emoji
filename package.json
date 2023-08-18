@@ -1,0 +1,9 @@
+{
+  "name": "conventional-changelog-emoji",
+  "version": "1.0.0",
+  "description": "conventional-changelog git-emoji preset",
+  "type": "commonjs",
+  "main": "index.js",
+  "author": "xioneko",
+  "license": "ISC"
+}
