@@ -114,7 +114,7 @@ function transform(commit, context) {
         const re = new RegExp(issueRegEx, 'g')
         commit.subject = commit.subject.replace(re, (_, prefix, issue) => {
             issues.push(`${prefix}${issue}`)
-            const url = expandTemplate(issuePrefixes, {
+            const url = expandTemplate(config.issueUrlFormat, {
                 host: context.host,
                 owner: context.owner,
                 repository: context.repository,
@@ -125,8 +125,8 @@ function transform(commit, context) {
         })
         // @User link
         commit.subject = commit.subject.replace(/\B@([a-z0-9](?:-?[a-z0-9/]){0,38})/g, (_, user) => {
-            if (username.includes('/')) {
-                return `@${username}`
+            if (user.includes('/')) {
+                return `@${user}`
             }
 
             const usernameUrl = expandTemplate(config.userUrlFormat, {
