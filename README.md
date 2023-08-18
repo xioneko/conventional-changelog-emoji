@@ -41,14 +41,14 @@ Describe on [Conventional Changelog Configuration Spec](https://github.com/conve
 ### semantic-release
 see [semantic-release config](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
 #### plugins
--  [@semantic-release/commit-analyzer](https://github.com/semantic-release/commit-analyzer#configuration)
+- [@semantic-release/commit-analyzer](https://github.com/semantic-release/commit-analyzer#configuration)
 - [@semantic-release/release-notes-generator](https://github.com/semantic-release/release-notes-generator#configuration)
 - [@semantic-release/changelog](https://github.com/semantic-release/changelog#configuration)
 - [@semantic-release/npm](https://github.com/semantic-release/npm#environment-variables)
 - [@semantic-release/github](https://github.com/semantic-release/github#configuration)
 - [@semantic-release/git](https://github.com/semantic-release/git#configuration)
 
-#### release.config.js
+#### .releaserc
 ```js
 module.exports = {
     branches: ['main', 'master'],
