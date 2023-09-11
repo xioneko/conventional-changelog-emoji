@@ -143,6 +143,17 @@ see [cz-customizable](https://github.com/xioneko/cz-customizable)
 npm install -g https://github.com/xioneko/cz-customizable.git#patch
 ```
 
+#### install commitizen
+see [commitizen](https://github.com/commitizen/cz-cli#conventional-commit-messages-as-a-global-utility)
+```bash
+npm install -g commitizen
+```
+#### .czrc
+```json
+{
+    "path": "cz-customizable"
+}
+```
 #### .cz-config.js
 ```js
 module.exports = {
